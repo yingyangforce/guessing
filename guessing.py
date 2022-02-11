@@ -1,14 +1,29 @@
 import random
+import time
 
 # guess the number game - limited guesses w/ hot, cold hints
 
-up_bound = 10
+print("Welcome to the number guessing game. The game where you guess the number.")
 
-theint = random.randint(1, up_bound)
+up_bound = int(input("What's the upper bound for your guess range?: "))
 
-num_guess = 0
+the_int = random.randint(1, up_bound)
 
+guess_count = 0
 guess_lim = 5
 
-while num_guess < guess_lim:
+print("\nThinking of a random number ", end="")
+
+time.sleep(1)
+
+for i in range(3):
+    print(". ", end="", flush=True)
+    time.sleep(1)
+
+print("\n")
+
+while guess_count < guess_lim:
+    the_guess = int(input("What number guess ye?: ")
+    guess_count += 1
+
 
