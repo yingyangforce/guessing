@@ -23,7 +23,7 @@ for i in range(3):
 print("\n")
 
 while guess_count < guess_lim:
-    the_guess = int(input("What number guess ye?: ")
+    the_guess = int(input("What number guess ye?: "))
     guess_count += 1
 
 
